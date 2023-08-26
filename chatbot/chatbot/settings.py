@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ys-rq6%=gx29^ys4fx8kdrtac9c$4u6_6ptt_8wtbhin$9i&cr
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+STATICFILES_DIRS=[BASE_DIR/ "chatbotApp/static", "chatbotApp/static"]
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chatbotApp',
 ]
 
 MIDDLEWARE = [
