@@ -1,0 +1,101 @@
++hola
+-hola que tal, con que puedo ayudarte
++como estas
+-yo estoy muy bien, con que puedo ayudarte
+
++ [*] (vencer|vencimiento|caducar){weight=4} [*]
+- <bot vencer>
+! var vencer= -
+-Si la fecha de vencimiento de tu cédula se acerca, es importante que inicies el proceso de renovación. Revisa las regulaciones locales y la documentación necesaria. En la mayoría de los casos, deberás completar un formulario, presentar documentos actualizados y seguir los procedimientos indicados para asegurarte de tener una cédula válida.
+-Si tu cédula está por vencer, te recomiendo iniciar el proceso de renovación con suficiente antelación. Consulta las regulaciones locales y los requisitos para la renovación de cédulas en la entidad correspondiente. Normalmente, deberás proporcionar documentos y datos personales actualizados.
+-Cuando la fecha de vencimiento de tu cédula está cerca, es crucial comenzar los trámites de renovación. Infórmate sobre los plazos y requisitos en tu área. Prepara los documentos necesarios, agenda una cita si es requerida y sigue las instrucciones de la entidad emisora para renovar tu cédula a tiempo.
+
++ [*] (caduque|caducado|vencido|vence){weight=4} [*]
+- <bot caducar>
+! var caducar= -
+-Lo que tienes que hacer es reunir los documentos necesarios, visitar el SEGIP, solicitar una reemisión, pagar las tarifas, esperar la emisión y recoger tu nuevo CI.
+-El proceso implica la recopilación de los documentos necesarios, una visita al SEGIP, la solicitud de una reemisión, el pago de tarifas, la espera por la emisión y finalmente, la obtención de tu nuevo CI.
+-Deberás juntar los documentos requeridos, dirigirte al SEGIP, gestionar la reemisión, realizar el pago de tarifas, aguardar por la emisión y, por último, recoger tu nuevo CI.
+
++ [*] (renovar|sacar|obtener|renovacion|requisito|requisitos|necesario|necesito){weight=4} [*]
+- <bot renovar>
+! var renovar= -
+- Aqui hay una lista de lo que necesitas para obtener tu CI: Formulario de solicitud,Certificado de nacimiento,Fotografía,Documento de respaldo,Certificado de empadronamiento,Pago de tarifas,Documento de identificación anterior,Certificado de matrimonio o divorcio,Certificado de residencia o declaración jurada,Documentos de respaldo para menores
+-A continuación una lista de los requisitos necesarios para obtener tu CI:Formulario de solicitud,Certificado de nacimiento,Fotografía,Documento de respaldo,Certificado de empadronamiento,Pago de tarifas,Documento de identificación anterior,Certificado de matrimonio o divorcio,Certificado de residencia o declaración jurada,Documentos de respaldo para menores
+-Te proporciono los elementos que necesitas para adquirir tu CI:Formulario de solicitud,Certificado de nacimiento,Fotografía,Documento de respaldo,Certificado de empadronamiento,Pago de tarifas,Documento de identificación anterior,Certificado de matrimonio o divorcio,Certificado de residencia o declaración jurada,Documentos de respaldo para menores
+
++ [*] (documentos|documento|papeles|documentacion){weight=5} [*]
+- <bot doc>
+! var doc= -
+-Para sacar el Carnet de Identidad en Bolivia, generalmente se requieren documentos como el certificado de nacimiento, fotografías, certificado de empadronamiento, comprobante de pago, y en caso de menores de edad, documentos de respaldo de los padres o tutores.
+-Para obtener el Carnet de Identidad en Bolivia, usualmente se necesitan documentos como el certificado de nacimiento, fotografías, comprobante de empadronamiento, comprobante de pago y, en el caso de menores, documentos que respalden la autorización de los padres o tutores.
+-Los requisitos para obtener el Carnet de Identidad en Bolivia incluyen, en general, la presentación de documentos como el certificado de nacimiento, fotografías, certificado de empadronamiento, comprobante de pago y, en el caso de solicitantes menores, documentos que validen el consentimiento de los padres o tutores.
+
++ [*] (contiene|aparece|informacion){weight=2} [*]
+- <bot contenido>
+! var contenido= -
+-La cédula de identidad incluye información como tu nombre completo, fotografía, número de identificación único, fecha de nacimiento y, en algunos casos, firma. También puede mostrar tu dirección actual y otros detalles relevantes.
+-En la cédula de identidad, encontrarás tus datos personales esenciales, como tu nombre completo, fecha de nacimiento, fotografía, número de identificación y, en ocasiones, tu firma. Estos detalles ayudan a establecer tu identidad legalmente.
+-La información registrada en la cédula de identidad abarca elementos clave como tu nombre completo, fecha de nacimiento, imagen, número de identificación exclusivo y, en algunas instancias, firma. Esta información es fundamental para tu identificación oficial.
+
++ [*] (extranjero|pais|fuera){weight=3} [*]
+- <bot extranjero>
+! var extranjero= -
+-Si eres un residente extranjero, por lo general puedes solicitar una cédula de identidad presentando documentos que demuestren tu estatus de residente legal en el país. Los requisitos específicos pueden variar, así que es aconsejable consultar la entidad emisora de cédulas para obtener información precisa.
+-Sí, en muchos lugares puedes solicitar una cédula de identidad si eres extranjero y tienes residencia legal. Para hacerlo, generalmente necesitarás proporcionar pruebas de tu estatus de residencia, como una visa válida, y cumplir con los requisitos establecidos por las autoridades locales
+-Sí, en la mayoría de los casos, los extranjeros con permiso de residencia tienen derecho a solicitar una cédula de identidad. Deberás presentar documentos que respalden tu residencia legal y cumplir con los procedimientos específicos establecidos por las autoridades correspondientes.
+
++ [*] (foto|fotografia){weight=3} [*]
+- <bot foto>
+! var foto= -
+-Al tomar la fotografía para la cédula de identidad, asegúrate de que sea reciente y cumpla con los requisitos de tamaño y fondo especificados por la entidad emisora. La imagen debe mostrar tu rostro claramente y sin obstrucciones, con una expresión neutral.
+-Al tomar la foto para tu cédula de identidad, procura tener una iluminación uniforme y un fondo neutro. Mantén una expresión facial natural y asegúrate de que tu rostro esté centrado en la imagen. La fotografía debe ser actual y cumplir con las dimensiones requeridas.
+-La fotografía para la cédula de identidad debe ser de alta resolución y tamaño adecuado. El fondo debe ser liso y sin elementos distractivos. Tu rostro debe estar claramente visible, con una expresión neutral. Verifica las pautas específicas de la entidad emisora para garantizar que la imagen cumpla con los requisitos.
+
++ [*] (error|mal|incorrecto|incorrectos|corregir){weight=2} [*]
+- <bot error>
+! var error= -
+-Si identificas un error en tu cédula, como un nombre incorrecto o una fecha de nacimiento equivocada, debes comunicarte con la entidad emisora de cédulas. Generalmente, te indicarán los pasos a seguir para corregir la información incorrecta. Es posible que necesites presentar pruebas documentales para respaldar la corrección.
+-Si notas información incorrecta en tu cédula, como un nombre mal escrito o una fecha de nacimiento errónea, debes ponerte en contacto con la entidad que emitió la cédula. Te proporcionarán los pasos necesarios para solicitar la corrección y te indicarán qué documentos debes presentar como prueba.
+-Si descubres errores en tu cédula, como datos personales incorrectos, debes informar a la entidad que emitió la cédula. Ellos te indicarán el proceso de corrección, que generalmente involucra presentar documentos que respalden la información correcta. Es importante corregir estos errores para evitar problemas futuros en trámites y verificaciones.
+
++ [*] (menor){weight=3} [*]
+- <bot menor>
+! var menor= -
+-Si deseas obtener una cédula de identidad como menor de edad, generalmente debes cumplir con las regulaciones establecidas por la entidad emisora. Esto puede incluir la presentación de documentos de identificación y el consentimiento de tus padres o tutores. Verifica las pautas locales para saber cómo proceder en tu país.
+-Sí, en algunos países es posible obtener una cédula de identidad como menor de edad. Sin embargo, los requisitos y el proceso pueden variar. En general, necesitarás el consentimiento de tus padres o tutores y cumplir con las regulaciones específicas establecidas por la entidad emisora de cédulas.
+-En muchas jurisdicciones, los menores de edad pueden solicitar una cédula de identidad, pero es probable que necesites la aprobación y el respaldo de tus padres o tutores legales. Asegúrate de conocer los requisitos y restricciones específicas de tu país para completar el proceso adecuadamente
+
++ [*] (viaje){weight=3} [*]
+- <bot viaje>
+! var viaje= -
+-En algunos países y regiones, la cédula de identidad es aceptada como documento de viaje para viajes dentro de ciertas áreas. Sin embargo, para viajar internacionalmente, generalmente se requiere un pasaporte. Verifica las regulaciones locales y los requisitos del destino antes de viajar.
+-La cédula de identidad puede ser aceptada como documento de viaje válido, especialmente en viajes dentro de ciertas regiones. Sin embargo, para viajes internacionales, se suele requerir un pasaporte. Investiga los requisitos del destino para saber qué documentos son necesarios.
+-En ciertas circunstancias y destinos, la cédula de identidad puede ser considerada válida como documento de viaje, especialmente para viajes locales o regionales. Sin embargo, para viajar fuera de tu país, un pasaporte suele ser el documento necesario. Consulta las políticas locales y los requisitos del país que planeas visitar.
+
++ [*] (pago|pagar|monto|precio){weight=3} [*]
+- <bot pago>
+! var pago= -
+-Tienes la posibilidad de abonar la tarifa en cualquiera de las agencias autorizadas del Banco Unión o en los bancos asignados con ese fin, el monto es de 17 bs.
+-La tarifa puede ser cancelada en cualquier sucursal autorizada del Banco Unión o en otros bancos designados con el propósito de pago, el monto es de 17 bs.
+-Es viable efectuar el pago de la tarifa en agencias autorizadas del Banco Unión o en bancos designados específicamente para este propósito, el monto es de 17 bs.
+
++ [*] (horario|hora|horas|dia|dias|rato){weight=3} [*]
+- <bot hora>
+! var hora= -
+-El horario de atención suele ser de lunes a viernes, de 8:00 a.m. a 4:00 p.m., y los sábados de 8:00 a.m. a 12:00 p.m.
+-Generalmente, se atiende de lunes a viernes, desde las 8:00 a. m. hasta las 4:00 p. m., además de los sábados, en un horario de 8:00 a. m. a 12:00 p. m.
+-El horario común de atención abarca los días de la semana de lunes a viernes, comenzando a las 8:00 a. m. y finalizando a las 4:00 p. m., mientras que los sábados, el horario es de 8:00 a. m. a 12:00 p. m.
+-Por lo general, el horario de servicio se extiende de lunes a viernes, desde las 8:00 a. m. hasta las 4:00 p. m., y los sábados, se brinda atención desde las 8:00 a. m. hasta el mediodía, a las 12:00 p. m.
+
++ donde es
+- <bot ubicacion>
++ [*] (ubicacion|donde|ubica|llegar){weight=3} [*]
+- <bot ubicacion>
+! var ubicacion= -
+-La oficica de SEGIP se encuentra en la siguiente direccion: Av. Circunvalacion, final America Este, Cochabamba
+
+
++*
+-no entiendo la pregunta, podrias repetirla porfavor
+-no logro comprenderte, me repites lo que necesites

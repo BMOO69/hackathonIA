@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ys-rq6%=gx29^ys4fx8kdrtac9c$4u6_6ptt_8wtbhin$9i&cr
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+STATICFILES_DIRS=[BASE_DIR/ "chatbotApp/static", "chatbotApp/static"]
 
 # Application definition
 
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'chatbotApp',
 ]
 
 MIDDLEWARE = [
@@ -116,6 +117,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_URL='/productos/'
+MEDIA_ROOT =  BASE_DIR / 'productos'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
