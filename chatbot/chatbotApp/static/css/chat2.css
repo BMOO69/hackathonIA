@@ -2,6 +2,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#cabecera {
+    background: #9FD5D1!important;
+}
+
 .chat-container {
     width: 80%;
     margin: 0 auto;
@@ -36,7 +40,7 @@ input[type="text"] {
 
 button {
     padding: 5px 10px;
-    background-color: #007BFF;
+    background-color: #8fdfa2;
     color: #fff;
     border: none;
     cursor: pointer;

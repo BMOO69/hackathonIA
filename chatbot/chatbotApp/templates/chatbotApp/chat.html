@@ -8,6 +8,10 @@
 <title>Chatbot</title>
 </head>
 <body>
+  <header>
+    <h3>ChaskiBot, tu amigo virtual Boliviano</h3>
+  </header>
+  <br>
   <form method="POST" action="{% url 'tu_vista' %}">
     {% csrf_token %}
     <div class="chat-container">

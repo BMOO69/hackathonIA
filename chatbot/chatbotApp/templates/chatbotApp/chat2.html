@@ -4,10 +4,22 @@
 <head>
     <title>Chat</title>
     <link rel="stylesheet" type="text/css" href="{%static 'css/chat2.css'%}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
 <body>
     <!-- chat.html -->
-    
+    <header>
+        <nav id="cabecera" class="navbar bg-body-tertiary">
+            <div class="container">
+                <img src="{%static '/img/ImgBOT.jpg'%}" width="100">
+              <a class="navbar-brand" href="#">
+                <h3>ChaskiBot, tu amigo virtual Boliviano</h3>
+              </a>
+            </div>
+          </nav>
+    </header>
+      <br>
+  
     <div class="chat-container">
         <div class="chat-messages">
             {% for message in messages %}
@@ -30,6 +42,5 @@
         });
         </script>
     </div>
-
 </body>
 </html>
