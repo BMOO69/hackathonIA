@@ -8,22 +8,26 @@
 <title>Chatbot</title>
 </head>
 <body>
-<div class="chat-container">
-  <div class="chat">
-    <div class="message received">
-      <p>Hola, ¿en qué puedo ayudarte hoy?</p>
-      <span class="timestamp">10:00 AM</span>
+  <form method="POST" action="{% url 'tu_vista' %}">
+    {% csrf_token %}
+    <div class="chat-container">
+      <div class="chat">
+        <div class="message received">
+          <p>Hola, ¿en qué puedo ayudarte hoy?</p>
+          <span class="timestamp">10:00 AM</span>
+        </div>
+        <div class="message sent">
+          <p>¡Hola! Tengo una pregunta sobre tu servicio.</p>
+          <span class="timestamp">10:05 AM</span>
+        </div>
+        <!-- Agrega más mensajes aquí -->
+      </div>
+      <div class="field input-field">
+        <input type="text" id="user-input" placeholder="Escribe un mensaje..." name="mensajeUser">
+        <button id="send-button" type="submit">Enviar</button>
+      </div>
     </div>
-    <div class="message sent">
-      <p>¡Hola! Tengo una pregunta sobre tu servicio.</p>
-      <span class="timestamp">10:05 AM</span>
-    </div>
-    <!-- Agrega más mensajes aquí -->
-  </div>
-  <div class="input-container">
-    <input type="text" id="user-input" placeholder="Escribe un mensaje...">
-    <button id="send-button">Enviar</button>
-  </div>
+  </form>
 </div>
 </body>
 </html>

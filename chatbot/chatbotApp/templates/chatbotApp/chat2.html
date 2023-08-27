@@ -1,0 +1,35 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/chat2.css'%}">
+</head>
+<body>
+    <!-- chat.html -->
+    
+    <div class="chat-container">
+        <div class="chat-messages">
+            {% for message in messages %}
+                <div class="message">
+                    <span class="sender">{{ message.sender }}:</span>
+                    <span class="content">{{ message.content }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <form method="post" action="/buscar/">
+            {% csrf_token %}
+            <input type="text" name="message" placeholder="Escribe un mensaje">
+            <input type="submit" value="Buscar">
+            
+        </form>
+        <button id="refresh-button">Actualizar</button>
+        <script>
+        document.getElementById('refresh-button').addEventListener('click', function() {
+            window.location.href = '/refresh_chat/';
+        });
+        </script>
+    </div>
+
+</body>
+</html>
