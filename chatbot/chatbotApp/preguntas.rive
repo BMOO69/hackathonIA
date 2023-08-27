@@ -1,5 +1,5 @@
 +hola
--hola que tal, con que puedo ayudarte
+-Hola, soy el ChaskiBot, En ue puedo ayudarte? 
 +como estas
 -yo estoy muy bien, con que puedo ayudarte
 
@@ -87,6 +87,19 @@
 -Generalmente, se atiende de lunes a viernes, desde las 8:00 a. m. hasta las 4:00 p. m., además de los sábados, en un horario de 8:00 a. m. a 12:00 p. m.
 -El horario común de atención abarca los días de la semana de lunes a viernes, comenzando a las 8:00 a. m. y finalizando a las 4:00 p. m., mientras que los sábados, el horario es de 8:00 a. m. a 12:00 p. m.
 -Por lo general, el horario de servicio se extiende de lunes a viernes, desde las 8:00 a. m. hasta las 4:00 p. m., y los sábados, se brinda atención desde las 8:00 a. m. hasta el mediodía, a las 12:00 p. m.
+
++ [*] (ticket|ficha|reserva|reservacion|){weight=3} [*]
+- <bot ticket>
+! var ticket= -
+-Para la reserva de un ticket para la renovacion de carnet se requiere llenar un formulario de registro; el mismo se encuentra en la pagina del SEGIP.
+-Si desea reservar una ficha para evitarse filas, debe derigirerse a la pagina web del SEGIP donde debera llenar un formulario de registro, en el mismo debe indicar su nombre, numero de carnet y el dia que quisiera ir
+-Para realizar una reservacion, debe hacerla maximo unos 5 dias antes, dirigirse a la pagina oficil del SEGIP, posteriormente debe llenar el formulario de obtencion de ficha y se realizara la reserva
+-Reservacion confirmada
+
++ [*] (quiero|reserva|reservacion|reservar){weight=3} [*]
+- <bot reservacion>
+! var reservacion= -
+-Reservacion confirmada
 
 + donde es
 - <bot ubicacion>

@@ -2,7 +2,7 @@ from multiprocessing import context
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 
-from chatbotApp.models import Menssage
+from chatbotApp.models import Menssage, Ticket
 # Create your views here.
 
 ##
@@ -67,10 +67,15 @@ def buscar(request):
         messagebot.save()
         print ('ChatBot> ' + str(reply))
 
+        if str(reply) == "Reservacion confirmada":
+            tick = Ticket(title="Carnet de identidad", description="Reserva de ticket", status="open")
+            tick.save()
+
 
         ##mensaje = "mensaje: %r" %request.POST.get("message")
     
     messages = Menssage.objects.all()
+    ##Menssage.objects.all().delete()
 
     return render(request, 'chatbotApp/chat2.html', {'mensaje': messages})
 

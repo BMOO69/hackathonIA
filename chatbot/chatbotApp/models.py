@@ -18,4 +18,4 @@ class Ticket(models.Model):
     status = models.CharField(max_length=20, choices=[('open', 'Abierto'), ('closed', 'Cerrado')])
     
     def __str__(self):
-        return self.title
+        return f'{self.title}: {self.description}: {self.status}'
