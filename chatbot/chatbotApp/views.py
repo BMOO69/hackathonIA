@@ -5,6 +5,12 @@ from django.http import HttpResponse, HttpResponseRedirect
 from chatbotApp.models import Menssage
 # Create your views here.
 
+##
+from rivescript import RiveScript
+
+
+##
+
 def saludo(request):
    ## cadena = request.GET["mensajeUser"]
     return render(request, "chatbotApp/chat.html")
@@ -42,6 +48,10 @@ def send_message(request):
 
 def buscar(request):
     
+    bot=RiveScript()
+    bot.load_file('C:/Users/Mb123/OneDrive/Escritorio/ChatBotCI/ChatBotCI/preguntas.rive')
+    bot.sort_replies()
+
     if request.method == 'POST':
         print(request.POST.get('message'))
         sender = "Usuario"
@@ -49,7 +59,18 @@ def buscar(request):
         message = Menssage(sender= sender, content=content )
         message.save()
         
-        mensaje = "mensaje: %r" %request.POST.get("message")
+        msg = bot.reply("localuser",content)
+        envio = "Chatbot>"
+        contenido= msg
+        reply = bot.reply("localuser", msg)
+        messagebot = Menssage(sender=envio, content=contenido)
+        messagebot.save()
+        print ('ChatBot> ' + str(reply))
+
+
+        ##mensaje = "mensaje: %r" %request.POST.get("message")
     
-    return HttpResponse(mensaje)
+    messages = Menssage.objects.all()
+
+    return render(request, 'chatbotApp/chat2.html', {'mensaje': messages})
 
